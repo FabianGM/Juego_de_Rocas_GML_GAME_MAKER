@@ -14,7 +14,16 @@ var l0B519AD6_0;l0B519AD6_0 = keyboard_check(vk_up);if (l0B519AD6_0){	/// @D
 /// @DnDVersion : 1
 /// @DnDHash : 6542B7AD
 /// @DnDArgument : "key" "vk_left"
-var l6542B7AD_0;l6542B7AD_0 = keyboard_check(vk_left);if (l6542B7AD_0){	/// @DnDAction : YoYo Games.Common.Variable
+var l6542B7AD_0;l6542B7AD_0 = keyboard_check(vk_left);if (l6542B7AD_0){	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 081098B5
+	/// @DnDParent : 6542B7AD
+	/// @DnDArgument : "soundid" "snd_shoot"
+	/// @DnDArgument : "pitch" "random_range(0.8, 1.2)"
+	/// @DnDSaveInfo : "soundid" "snd_shoot"
+	audio_play_sound(snd_shoot, 0, 0, 1.0, undefined, random_range(0.8, 1.2));
+
+	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 6371A676
 	/// @DnDParent : 6542B7AD
